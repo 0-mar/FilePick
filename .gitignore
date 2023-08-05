@@ -1,0 +1,23 @@
+# Ignore all
+*
+
+# Unignore all dirs
+!*/
+
+.idea/
+
+# Unignore .txt, .py, .png
+!*.txt
+!*.TXT
+!*.py
+!*.png
+!*.key
+!*.xor
+
+# Unignore markup
+!*.md
+!*.MD
+
+# Unignore .gitignore
+!.gitignore
+
