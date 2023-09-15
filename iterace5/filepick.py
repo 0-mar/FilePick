@@ -21,30 +21,16 @@ import argparse
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(prog='FilePick')
-    parser.add_argument("source")
-    parser.add_argument("destination")
-    parser.add_argument('-r', '--recursive', action='store_true')
-    parser.add_argument('-d', '--date', default=datetime.now().date().strftime("%d/%m/%Y"))
-    parser.add_argument('-e', '--extensions', nargs="*", default=[".txt", ".docx"])
-
-    args = parser.parse_args()
-
-    return args.source, args.destination, args.extensions, datetime.strptime(args.date, "%d/%m/%Y"), args.recursive
+    pass
 
 
 def copy_files(source_dir: Path, dest_dir: Path, file_exts, date, recursive):
-    for file in source_dir.iterdir():
-        creation_date = file.stat().st_ctime
-        if file.is_file() and file.name.endswith(tuple(file_exts)) and creation_date >= date:
-            shutil.copyfile(file, Path(dest_dir, file.name))
-        elif file.is_dir() and recursive:
-            copy_files(file, dest_dir, file_exts, date, recursive)
+    pass
 
 
 def filepick():
     src, dest, file_exts, date, recursive = parse_args()
-    copy_files(Path(src), Path(dest), file_exts, date.timestamp(), recursive)
+    copy_files()  # TODO spravne zavolej funkci
 
 
 if __name__ == '__main__':

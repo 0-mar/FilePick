@@ -27,7 +27,7 @@ def copy_files(source_dir: Path, dest_dir: Path, file_exts, date, recursive):
 
 def filepick():
     src, dest, file_exts, date, recursive = parse_args()
-    copy_files(Path(src), Path(dest), file_exts, date.timestamp(), recursive)
+    copy_files() # TODO spravne zavolej funkci
 
 
 if __name__ == '__main__':
