@@ -5,3 +5,4 @@ if "resolution" in slovnik:     # stejne jako slovnik.keys()
 
 if 120 in slovnik.values():
     print("Hodnota 120 je ve slovniku")
+

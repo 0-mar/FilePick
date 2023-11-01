@@ -7,7 +7,15 @@ Zeptá se na jméno a pro něj uloží telefonní číslo, které zadá uživate
 kontakty = {}   # alternativne take kontakty = dict()
 
 def fce():
-    pass
+    while True:
+        jmeno = input("Zadej jmeno nebo konec: ")
+        if jmeno == "konec":
+            break
+        else:
+            cislo = input("Zadej cislo: ")
+            kontakty[jmeno] = cislo
+
+    print(kontakty)
 
 
 fce()

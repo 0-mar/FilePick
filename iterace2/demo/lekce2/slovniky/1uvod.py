@@ -10,19 +10,15 @@ Slovník můžeš použít, když máš několik kousků informací, které se d
 ale chceš s nimi pracovat jako s jednou proměnnou.
 """
 
-
-
 slovnik = {"resolution": "1920x1200", "shaders": True, "texture_quality": "high", "max_fps": 120}
-print(slovnik)
-
+#print(slovnik)
 
 # hodnoty ze slovníku se získávají podobně jako ze seznamu, jen místo indexu
 # se použije klíč
-
 print(slovnik["resolution"])
 
 # neexistujicí klíč - vyhodi vyjimku
-print(slovnik["neexistuju"])
+#print(slovnik["neexistuju"])
 
 # hodnoty jdou podle klíče i měnit
 slovnik["shaders"] = False

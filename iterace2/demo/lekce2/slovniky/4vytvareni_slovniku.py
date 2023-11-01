@@ -1,4 +1,5 @@
 slovnik = {"resolution": "1920x1200", "shaders": True, "texture_quality": "high", "max_fps": 120}
+
 """
 Slovník se dá vytvořit dvěma způsoby. Buď pomocí složených závorek,
 nebo funkce dict(). Ta, stejně jako str, int či list, převede cokoli, co jde, na slovník.
@@ -6,7 +7,7 @@ nebo funkce dict(). Ta, stejně jako str, int či list, převede cokoli, co jde,
 Také díky ní můžeme vytvořit prázdný slovník
 """
 
-prazdny = dict()
+prazdny = {} # dict()
 print(prazdny)
 
 # funkci dict muzeme predat bud jiny slovnik, cimz vytvorime kopii
